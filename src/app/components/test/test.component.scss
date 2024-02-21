@@ -1,0 +1,66 @@
+/* (A) RESPONSIVE IMAGE */
+.himg { width: 100%; }
+.hwrap { max-width: 500px; } /* optional */
+ 
+/* (B) POSITION CAPTION */
+.hwrap { position: relative; }
+.hcap {
+  /* (B1) PLACE AT BOTTOM */
+  position: absolute; bottom: 0; left: 0;
+ 
+  /* (B2) DIMENSIONS + COLORS */
+  width: 100%; padding: 10px;
+  color: #fff; background: rgba(0, 0, 0, 0.5);
+}
+
+/* (C) ONLY SHOW CAPTION ON HOVER */
+.hcap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.hwrap:hover .hcap{
+  visibility: visible; opacity: 1;
+}
+
+
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 50%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #da9100;
+  overflow: hidden;
+  width: 50%;
+  height:0; 
+  transition: .51s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  width: 50%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

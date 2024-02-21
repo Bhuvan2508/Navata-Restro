@@ -1,0 +1,88 @@
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an vertical flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(+180deg); /* Adjusted to rotate around X-axis */
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color:#da9100;
+    color: white;
+    transform: rotateX(180deg); /* Adjusted to rotate around X-axis */
+  }
+  
+  
+.foot{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#8A2BE2;
+  color: white;
+  text-align: center;
+}
+
+
+
+.hello{
+background-color:  rgb(1, 12, 109);
+}
+
+
+
+/* (A) RESPONSIVE IMAGE */
+.himg { width: 100%; }
+.hwrap { max-width: 500px; } /* optional */
+ 
+/* (B) POSITION CAPTION */
+.hwrap { position: relative; }
+.hcap {
+  /* (B1) PLACE AT BOTTOM */
+  position: absolute; bottom: 0; left: center;
+ 
+  /* (B2) DIMENSIONS + COLORS */
+  width: 100%; padding: 10px;
+  color: #fff; background: #da9100;
+}
+
+/* (C) ONLY SHOW CAPTION ON HOVER */
+.hcap {
+  visibility: none; opacity: 0;
+  transition: opacity 0.3s;
+}
+.hwrap:hover .hcap{
+  visibility: visible; opacity: 1;
+}

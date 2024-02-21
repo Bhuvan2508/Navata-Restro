@@ -1,0 +1,55 @@
+.nav-link
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #da9100 0%,
+    #da9100 50%,
+     #da9100 67%,
+    #da9100 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #ffffff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 20px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.navbar{
+  float: center;
+
+}
+.animate-charcter{
+  color: blueviolet;
+}
+.foot{
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#8A2BE2;
+    color: white;
+    text-align: end;
+  } 
+
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999; /* Adjust z-index as needed */
+}
+
+ 
+
+
+
