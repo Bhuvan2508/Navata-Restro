@@ -5862,7 +5862,7 @@ textarea.form-control {
     .footer.footer-dark .copyright p a:hover {
       color: #03bcf5; }
 
-.footer.footer-dark p {
+.footer.footer-dark p {button
   color: #999999; }
 
 .footer.footer-dark .footer-bottom {
@@ -5877,8 +5877,9 @@ textarea.form-control {
        Responsive
 *************************/
 @media (max-width: 991px) {
-  .footer .footer-title {
-    margin-bottom: 30px; } }
+  .footer .footer-title {navbar-toggler
+    margin-bottom: 30px; } 
+  }
 
 @media (max-width: 575px) {
   .footer-link {

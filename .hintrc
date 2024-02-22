@@ -33,10 +33,20 @@
       "default",
       {
         "ignore": [
-          "-webkit-text-size-adjust"
+          "-webkit-text-size-adjust",
+          "-moz-transform",
+          "user-select"
         ]
       }
     ],
-    "no-inline-styles": "off"
+    "no-inline-styles": "off",
+    "axe/aria": [
+      "default",
+      {
+        "aria-allowed-attr": "off",
+        "aria-valid-attr": "off"
+      }
+    ],
+    "disown-opener": "off"
   }
 }

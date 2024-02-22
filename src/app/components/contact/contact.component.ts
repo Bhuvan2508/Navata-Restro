@@ -27,7 +27,7 @@ export class ContactComponent {
     };
 
     this.http
-      .post('http://localhost:8080/api/v1/employee/contact/save', bodyData, {
+      .post('http://localhost:8080/api/v1/contact/save', bodyData, {
         responseType: 'text',
       })
       .subscribe((resultData: any) => {

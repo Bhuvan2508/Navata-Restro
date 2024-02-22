@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { LegalComponent } from './legal/legal.component';
 import { ExtendedComponent } from './extended/extended.component';
 import { TestComponent } from './components/test/test.component';
+import { Test1Component } from './components/test1/test1.component';
 
 
 
@@ -21,7 +22,8 @@ import { TestComponent } from './components/test/test.component';
     AboutComponent,
     LegalComponent,
     ExtendedComponent,
-    TestComponent, 
+    TestComponent,
+    Test1Component, 
         
        
                             

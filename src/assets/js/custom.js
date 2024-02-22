@@ -13,7 +13,7 @@ NOTE: This file contains all scripts for the actual Template.
 ================================================
 
 :: Menu
-:: Counter
+:: Counternav
 :: Owl carousel
 :: Swiper slider
 :: Slickslider
@@ -67,6 +67,9 @@ NOTE: This file contains all scripts for the actual Template.
     }
   };
 
+
+
+  
 /*************************
     Counter
 *************************/
@@ -196,6 +199,8 @@ NOTE: This file contains all scripts for the actual Template.
       });
     }
   }
+
+ 
 
 /*************************
     Slickslider
