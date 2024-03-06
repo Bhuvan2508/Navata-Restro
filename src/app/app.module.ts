@@ -7,8 +7,6 @@ import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { LegalComponent } from './legal/legal.component';
-import { ExtendedComponent } from './extended/extended.component';
 import { TestComponent } from './components/test/test.component';
 import { Test1Component } from './components/test1/test1.component';
 
@@ -20,8 +18,6 @@ import { Test1Component } from './components/test1/test1.component';
     HomeComponent,
     ContactComponent,
     AboutComponent,
-    LegalComponent,
-    ExtendedComponent,
     TestComponent,
     Test1Component, 
         
